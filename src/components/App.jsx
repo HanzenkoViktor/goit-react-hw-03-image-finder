@@ -83,7 +83,7 @@ class App extends Component {
 
         {isLoading && <Loader />}
 
-        {items.length > 0 && items.length % 12 <= 0 && (
+        {items.length > 0 && items.length % 12 <= 0 && !isLoading && (
           <Button onClick={handleClick} />
         )}
 
