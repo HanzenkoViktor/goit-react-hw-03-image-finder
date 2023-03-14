@@ -5,10 +5,6 @@ import { Backdrop, ModalWindow } from './Modal.styled';
 const modalRoot = document.querySelector('#modal-root');
 
 class Modal extends Component {
-  state = {
-    showModal: false,
-  };
-
   componentDidMount() {
     window.addEventListener('keydown', this.handleKey);
   }
